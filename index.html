@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ULTRACELESTE · Sporting Cristal</title>
+<meta name="description" content="Ultraceleste: historia, títulos, ídolos, estadio y servicios de la hinchada de Sporting Cristal, en el Rímac.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="nav">
+  <a href="#inicio" class="logo"><span class="star">★</span> ULTRA<b>CELESTE</b></a>
+  <nav id="menu">
+    <a href="#club">Club</a>
+    <a href="#historia">Historia</a>
+    <a href="#titulos">Títulos</a>
+    <a href="#idolos">Ídolos</a>
+    <a href="#estadio">Estadio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#trivia">Trivia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button id="themeBtn" aria-label="Cambiar tema">🌙</button>
+  <button id="burger" aria-label="Menú">☰</button>
+</header>
+
+<section id="inicio" class="hero">
+  <canvas id="fx"></canvas>
+  <div class="hero-in">
+    <svg class="crest" viewBox="0 0 120 140" aria-hidden="true">
+      <path d="M10 10h100v70c0 30-30 48-50 56C40 128 10 110 10 80z" fill="#00AEEF" stroke="#fff" stroke-width="5"/>
+      <path d="M10 10h100v22H10z" fill="#fff"/>
+      <text x="60" y="27" text-anchor="middle" font-size="14" font-weight="900" fill="#00AEEF" font-family="Arial">S.C.</text>
+      <text x="60" y="92" text-anchor="middle" font-size="46" fill="#fff">★</text>
+      <text x="60" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Arial">1955</text>
+    </svg>
+    <p class="kicker">Hinchada · Rímac · Lima, Perú</p>
+    <h1>ULTRA<span>CELESTE</span></h1>
+    <p class="lead">Todo sobre <strong>Sporting Cristal</strong>: la pasión celeste del Rímac.</p>
+    <div class="cta">
+      <a class="btn" href="#club">Conocer el club</a>
+      <a class="btn ghost" id="waHero" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+</section>
+
+<section id="club" class="sec">
+  <h2 class="title">El Club</h2>
+  <div class="grid4">
+    <div class="stat"><span data-n="1955">0</span><small>Año de fundación</small></div>
+    <div class="stat"><span data-n="20">0</span><small>Campeonatos nacionales*</small></div>
+    <div class="stat"><span data-n="1997">0</span><small>Final de Copa Libertadores</small></div>
+    <div class="stat"><span data-n="11">0</span><small>Mil espectadores aprox. (Gallardo)*</small></div>
+  </div>
+  <div class="cards">
+    <article class="card flip"><div class="in"><div class="f"><h3>Nombre</h3><p>Club Sporting Cristal</p></div><div class="b">Fundado el 13 de diciembre de 1955 en Lima.</div></div></article>
+    <article class="card flip"><div class="in"><div class="f"><h3>Apodos</h3><p>Los Celestes · Cerveceros · Rimenses</p></div><div class="b">Vinculados a su origen cervecero y a su barrio, el Rímac.</div></div></article>
+    <article class="card flip"><div class="in"><div class="f"><h3>Colores</h3><p>Celeste y blanco</p></div><div class="b">La camiseta celeste es su sello de identidad.</div></div></article>
+    <article class="card flip"><div class="in"><div class="f"><h3>Sede</h3><p>Rímac, Lima</p></div><div class="b">Su casa histórica es el Estadio Alberto Gallardo.</div></div></article>
+  </div>
+  <p class="note">* Cifras aproximadas. Verifica los datos más recientes en los canales oficiales del club.</p>
+</section>
+
+<section id="historia" class="sec alt">
+  <h2 class="title">Línea de tiempo</h2>
+  <div class="tl" id="timeline"></div>
+</section>
+
+<section id="titulos" class="sec">
+  <h2 class="title">Palmarés</h2>
+  <div class="bars" id="bars"></div>
+  <div class="years" id="years"></div>
+  <p class="note">Años de campeonatos nacionales, según registros generales. Confirma el listado oficial antes de publicarlo.</p>
+</section>
+
+<section id="idolos" class="sec alt">
+  <h2 class="title">Ídolos Celestes</h2>
+  <div class="cards" id="idols"></div>
+</section>
+
+<section id="estadio" class="sec">
+  <h2 class="title">La casa en el Rímac</h2>
+  <div class="two">
+    <svg viewBox="0 0 400 240" class="stad" role="img" aria-label="Ilustración del estadio">
+      <rect width="400" height="240" rx="18" fill="var(--sky)"/>
+      <ellipse cx="200" cy="150" rx="170" ry="70" fill="#0a5c36"/>
+      <ellipse cx="200" cy="150" rx="140" ry="52" fill="#128a4e"/>
+      <rect x="110" y="120" width="180" height="60" fill="none" stroke="#fff" stroke-width="2"/>
+      <line x1="200" y1="120" x2="200" y2="180" stroke="#fff" stroke-width="2"/>
+      <circle cx="200" cy="150" r="14" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M30 150Q200 20 370 150" fill="none" stroke="#00AEEF" stroke-width="14"/>
+      <path d="M45 160Q200 50 355 160" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+      <g fill="#fff"><circle cx="70" cy="40" r="3"/><circle cx="330" cy="30" r="2"/><circle cx="360" cy="70" r="2"/></g>
+    </svg>
+    <div>
+      <h3>Estadio Alberto Gallardo</h3>
+      <p>El estadio histórico del club está en el distrito del <strong>Rímac</strong>, Lima. Es el punto de encuentro de los hinchas celestes.</p>
+      <ul class="ticks">
+        <li>Ubicación: Rímac, Lima</li>
+        <li>Ambiente de barrio, cerca del centro de Lima</li>
+        <li>Para partidos de mayor aforo, el club puede usar otros estadios</li>
+      </ul>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Estadio+Alberto+Gallardo+Rimac+Lima">Ver en Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="sec alt">
+  <h2 class="title">Servicios del local</h2>
+  <p class="center">Servicios de ejemplo para la hinchada. Edita esta lista en <code>script.js</code>.</p>
+  <div class="cards" id="services"></div>
+</section>
+
+<section id="trivia" class="sec">
+  <h2 class="title">Trivia Celeste</h2>
+  <div class="quiz" id="quiz"></div>
+</section>
+
+<section id="muro" class="sec alt">
+  <h2 class="title">Muro de hinchas</h2>
+  <form id="wallForm" class="form">
+    <input id="wName" placeholder="Tu nombre" maxlength="30" required>
+    <input id="wMsg" placeholder="Tu mensaje de aliento" maxlength="120" required>
+    <button class="btn" type="submit">Publicar</button>
+  </form>
+  <div id="wall" class="wall"></div>
+</section>
+
+<section id="contacto" class="sec">
+  <h2 class="title">Contacto</h2>
+  <div class="two">
+    <div class="contact">
+      <p>📍 <strong>Local:</strong> Rímac, Lima, Perú</p>
+      <p>📞 <strong>Celular:</strong> <a href="tel:+51943094835">01943094835</a></p>
+      <p>💬 <strong>WhatsApp:</strong> <a id="waLink" href="#" target="_blank" rel="noopener">01943094835</a></p>
+      <p>✉️ <strong>Correo:</strong> <a href="mailto:joseestradatoledo0407@gmail.com">joseestradatoledo0407@gmail.com</a></p>
+    </div>
+    <form id="contactForm" class="form">
+      <input id="cName" placeholder="Nombre" required>
+      <textarea id="cMsg" placeholder="Tu mensaje" rows="4" required></textarea>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>★ ULTRACELESTE · Sitio de hinchas, no oficial. Sporting Cristal y sus marcas pertenecen a sus titulares.</p>
+  <p>© <span id="yr"></span> · Rímac, Lima</p>
+</footer>
+<button id="top" aria-label="Subir">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
